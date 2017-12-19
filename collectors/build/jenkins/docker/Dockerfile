@@ -15,7 +15,7 @@ VOLUME ["/hygieia/logs"]
 
 #IMPORT CERTIFICATES
 
-ENV JAVA_HOME=/usr/lib/jvm/jre
+ENV JAVA_HOME=/docker-java-home/jre
 ENV CUSTOM_KEYSTORE=/etc/ssl/certs
 ARG CLUSTER_PUBLIC_HOSTNAME=devos.alm.totta.dev.corp
 
