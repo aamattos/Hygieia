@@ -16,9 +16,10 @@ fi
 echo "SPRING_DATA_MONGODB_HOST: $SPRING_DATA_MONGODB_HOST"
 echo "SPRING_DATA_MONGODB_PORT: $SPRING_DATA_MONGODB_PORT"
 
-#export jasypt.encryptor.password=$JASYPT_ENCRYPTOR_PASSWORD
-
 cat > dashboard.properties <<EOF
+
+jasypt.encryptor.password=$JASYPT_ENCRYPTOR_PASSWORD
+
 #Database Name - default is test
 dbname=${SPRING_DATA_MONGODB_DATABASE:-dashboard}
 
