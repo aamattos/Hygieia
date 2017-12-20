@@ -95,6 +95,8 @@ public class DefaultJiraClient implements JiraClient {
 				String query = featureWidgetQueries.getStoryQuery(startDateStr,
 						featureSettings.getJiraIssueTypeNames(), featureSettings.getStoryQuery());
 				
+				LOGGER.info("query: " + query);
+				
 				Promise<SearchResult> promisedRs = client.getSearchClient().searchJql(
 						query, featureSettings.getPageSize(), pageStart, DEFAULT_FIELDS);
 				
