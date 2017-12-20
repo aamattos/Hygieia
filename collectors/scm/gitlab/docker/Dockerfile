@@ -1,5 +1,5 @@
 
-FROM docker.io/openjdk:8-jre
+FROM 172.30.254.171:5000/alm-registry/developer-hub-openjdk:2.0.5-SNAPSHOT
 
 MAINTAINER Hygieia@capitalone.com
 
